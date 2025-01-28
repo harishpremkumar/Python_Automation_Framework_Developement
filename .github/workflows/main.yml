@@ -51,12 +51,12 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: reports
-          path: ./allure-results 
+          path: ./report
 
       - name: Download reports
         uses: actions/download-artifact@v3
         with:
-          name: allure-results 
-          path: allure-results/
+          name: ./report
+          path: ./report
 
       
