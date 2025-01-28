@@ -8,7 +8,7 @@ class DriverFactory:
     def create_driver():
         """Create a Selenium WebDriver instance."""
         options = webdriver.ChromeOptions()
-        options.add_argument("--head")  # Optional: Run in headless mode for CI/CD
+        options.add_argument("--headless")  # Optional: Run in headless mode for CI/CD
         options.add_argument("--incognito")
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
         driver.maximize_window()
