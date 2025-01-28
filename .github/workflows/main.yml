@@ -57,13 +57,6 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: allure-results 
-          path: allure-results/     
-
-      - name: Allure Report action from marketplace
-        uses: simple-elf/allure-report-action@v1.7
-        if: always()
-        with:
-          allure_results: ./allure-results
-          allure_history: allure-history
+          path: allure-results/
 
       
