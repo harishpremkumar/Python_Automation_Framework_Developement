@@ -1,0 +1,6 @@
+pages/__pycache__
+protect/__pycache__
+report/*
+tests/__pycache__
+.pytest_cache
+allure-results/*
