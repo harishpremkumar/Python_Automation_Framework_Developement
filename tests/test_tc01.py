@@ -9,7 +9,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from pages.github_page import GitHubPage
 
 
-scenarios("../features/TC01.feature")
+scenarios("../features/tc01.feature")
 
 from selenium.webdriver.common.by import By
 from protect.new import DriverFactory
