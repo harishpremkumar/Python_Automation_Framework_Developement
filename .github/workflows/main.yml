@@ -66,41 +66,4 @@ jobs:
           allure_results: allure-results
           allure_history: allure-history
 
-      - name: Publish Test Report
-        uses: ctrf-io/github-test-reporter@v1
-        with:
-          # Core Configuration
-          report-path: './report/*.json' # Path or glob pattern to the CTRF report JSON file.
-
-          # Reports - Choose as many as you like
-          summary-report: true
-          test-report: false
-          test-list-report: false
-          failed-report: false
-          fail-rate-report: false
-          flaky-report: false
-          flaky-rate-report: false
-          failed-folded-report: false
-          previous-results-report: false
-          ai-report: false
-          skipped-report: false
-          suite-folded-report: false
-          suite-list-report: false
-          pull-request-report: false
-          commit-report: false
-          custom-report: false
-
-          # Behavior Options
-          summary: false # Post report to the job summary. Default is true
-          pull-request: false # Comment on pull request with report. Default is false
-          title: '' # Set a custom title to display on the report.
-          annotate: false # Add failed test annotations. Default is true
-          on-fail-only: false # Add a pull request comment only if tests fail. Default is false
-          exit-on-fail: false # Exit the workflow with a failure status if any tests fail. Default is false
-          use-suite-name: false # Prefix test names with the suite name for better grouping. Default is false
-          update-comment: false # Update existing Pull Request comment. Default is false
-          overwrite-comment: false # Overwrite existing Pull Request comment. Default is false
-          comment-tag: false # Tag to match Pull Request comment
-        if: always()    
-
-
+      
