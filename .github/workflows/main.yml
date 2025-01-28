@@ -48,13 +48,13 @@ jobs:
         continue-on-error: true
 
       - name: Upload Test Artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: reports
           path: ./allure-results 
 
       - name: Download reports
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: allure-results 
           path: allure-results/     
